@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        header, footer {
+           
+            padding: 20px;
+        }
+        nav a {
+            color: black; 
+            text-decoration: none;
+            margin: 0 10px; 
+        }
+        nav a:hover {
+            color: gray; 
+        }
+    </style>
+</head>
+<body>
+    <header align="center">
+        <h1 id="name_sate">Компания «Рога и копыта»</h1>
+        <h2>Мы работаем для вас.</h2>
+        <nav align="center">
+            <a href="index.html"><b> | Главная | </b></a>
+            <a href="about.html"><b> О компании </b> |</a>
+            <a href="employee.html"><b> Наши сотрудники </b> |</a>
+            <a href="education.html"><b> Образование </b> |</a>
+            <a href="gallery.html"><b> Галерея </b>|</a>
+        </nav>
+    </header>
+    <section align="center"> 
+        <iframe width="500 px" height="500 px" src="img/fullimg/1.jpg" name="frame"> </iframe>
+        <br>
+           <a href="img/fullimg/1.jpg " target="frame"> <img src="img/preview/15.jpg" alt="Изображение 1" ></a>
+           <a href="img/fullimg/2.jpg " target="frame"> <img src="img/preview/25.jpg" alt="Изображение 2" > </a> 
+           <a href="img/fullimg/3.jpg " target="frame"> <img src="img/preview/35.jpg" alt="Изображение 3"> </a> 
+           <a href="img/fullimg/4.png " target="frame"> <img src="img/preview/45.png" alt="Изображение 4" > </a> 
+           <a href="img/fullimg/5.jpg " target="frame"> <img src="img/preview/55.jpg" alt="Изображение 5"> </a> 
+        </section>
+    <footer>    
+        <a href="#name_sate">Наверх</a><br>
+        <p><i>&copy; Бендер и компания</i></p>
+    </footer>
+</body>
+</html>
