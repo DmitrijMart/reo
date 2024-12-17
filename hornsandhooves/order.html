@@ -1,141 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/iconka.png">
+    <link rel="stylesheet" href="main.css">
     <title>Рога и копыта</title>
     <style>
-      body {
-          font-family: Arial, sans-serif; /* Установка основного шрифта */
-          font-size: 16px; /* Базовый размер шрифта */
-      }
-      nav {
-          text-align: center; /* Центрируем навигацию */
-      }
-      nav a {
-          color: rgb(255, 251, 251);
-          text-decoration: none;
-          font-size: 1.2em; /* Увеличение размера шрифта для ссылок */
-          font-variant: small-caps; /* Применение малых прописных букв */
-      }
-      nav a:hover {
-          color: gray;
-      }
-      header h1 {
-          font-size: 2.5em; /* Увеличение размера заголовка */
-          font-variant: small-caps; /* Применение малых прописных букв для заголовка */
-      }
-      header h2 {
-          font-size: 1.5em; /* Размер подзаголовка */
-          font-variant: normal; /* Обычное отображение для подзаголовка */
-      }
-      footer p {
-          font-size: 0.9em; /* Уменьшение размера текста в подвале */
-          font-variant: italic; /* Курсив для текста в подвале */
-      }
-  </style>
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="img/iconka.png" type="image/x-icon">
+        body {
+            font-family: Arial, sans-serif; /* Установка основного шрифта */
+            font-size: 15px; /* Базовый размер шрифта */
+            margin: 0; /* Убираем отступы по умолчанию */
+            padding: 0; /* Убираем внутренние отступы */
+            background-color: #f0f0f0; /* Цвет фона страницы */
+        }
+
+        header {
+            text-align: center; /* Выравнивание текста по центру */
+            background-color: #ffffff; /* Цвет фона для шапки */
+            color: white; /* Цвет текста в шапке */
+            padding: 20px; /* Отступы вокруг текста в шапке */
+        }
+
+        .container {
+            display: flex; /* Используем flexbox для колонок */
+            margin: 20px auto; /* Центрируем контейнер с отступом сверху */
+        }
+
+        nav {
+            width: 30%; /* Ширина левой колонки (навигация) */
+            padding: 20px; /* Отступы внутри навигации */
+            background-color: #e7e7e7; /* Цвет фона для навигации */
+        }
+
+        nav a {
+            color: rgb(255, 251, 251); /* Цвет ссылок по умолчанию */
+            text-decoration: underline; /* Подчеркивание ссылок по умолчанию */
+            font-size: 1.2em; /* Увеличение размера шрифта для ссылок */
+            font-variant: small-caps; /* Применение малых прописных букв */
+            font-family: 'Verdana', sans-serif; /* Изменение гарнитуры шрифта для ссылок */
+        }
+
+        nav a:hover {
+            color: rgb(200, 200, 200); /* Цвет ссылок при наведении (более светлый) */
+            text-decoration: none; /* Убираем подчеркивание при наведении */
+        }
+
+        main {
+            width: 70%; /* Ширина правой колонки (основной контент) */
+            padding: 20px; /* Отступы внутри основного контента */
+        }
+
+        footer {
+            text-align: center; /* Выравнивание текста по центру в подвале */
+            padding: 10px; /* Отступы вокруг текста в подвале */
+            background-color: #8fa09b; /* Цвет фона для подвала */
+            color: white; /* Цвет текста в подвале */
+        }
+
+        table {
+            width: 100%; /* Ширина таблицы формы заполнения */
+            border-collapse: collapse; /* Убираем двойные границы у ячеек таблицы */
+        }
+    </style>
 </head>
 <body>
-<header align="center">
-<h1 href="#name_sate" >Компания “Рога и копыта”.</h1>
-<h2>Мы работаем для вас</h2>
-</header>
-<hr>
-<nav align="center"> 
-    <a href="index.html"><b>| Главная |</b></a> 
-    <a href="about.html"><b>О компании |</b></a>
-    <a href="employee.html"><b>Наши сотрудники |</b></a>
-    <a href="education.html"><b>Образование |</b></a>
-    <a href="gallery.html"><b>Галерея |</b></a>
-    <a href="order.html"><b>Заказы |</b></a>
-    <a href="fonts.html"><b>Шрифт |</b></a>
+    <header>
+        <h1>Компания «Рога и копыта»</h1> 
+        <h2>Мы работаем для вас</h2>
+    </header>
+
+    <div class="container">
+        <nav>
+          <ul>
+            <li><p><a href="index.html"><b>Главная</b></a></p> </li>  
+            <li><p><a href="about.html"><b>О компании</b></a></p> </li>  
+            <li><p><a href="employee.html"><b>Наши сотрудники</b></a></p> </li>  
+            <li><p><a href="education.html"><b>Образование</b></a></p> </li>  
+            <li><p><a href="gallery.html"><b>Галерея</b></a></p> </li>  
+            <li><p><a href="order.html"><b>Заказы</b></a></p> </li>  
+            <li><p><a href="fonts.html"><b>Шрифт </b></a></p> </li>  
+            <li><p><a href="https://www.mvd.ru" target="_blank" rel="noopener noreferrer" style="color: red;"><b>Мы чтим уголовный кодекс</b></a></p> </li>  
+          </ul>
         </nav>
-    <hr>
-    <table width="top" border="3" align="center" bgcolor="aquamarine">
-    <th width="500px">
-        <form action="/signup" method="POST">
-        <p>
-          <label>
-            <input type="radio" name="title" value="mr">
-            Наличный расчет
-          </label>
-          <label>
-            <input type="radio" name="title" value="mrs">
-            Безналичный расчет
-          </label>
-        </p>
-        <p>
-          <label>Фамилия</label>
-          <input type="text" name="first_name" required placeholder="Введите вашу фамилию ">
-        </p>
-        <p>
-          <label>Имя</label>
-          <input type="text" name="last_name" required placeholder="Введите ваше имя ">
-        </p>
-        <p>
-            <label>Отчество</label>
-            <input type="text" name="last_name" required placeholder="Введите ваше отчесвтво">
-          </p>
-        <p>
-          <label>Email</label>
-          <input type="email" name="email"required placeholder="Введите вашу почту">
-        </p>
-        <p>
-          <label>Телефон</label>
-          <input type="tel" name="phone" required placeholder="Введите ваш телефон">
-        </p>
-        <p>
-          <label>Пароль</label>
-          <input type="password" name="password" required placeholder="Введите пароль">
-        </p>
-        <p>
-          <label>Подтвердите пароль</label>
-          <input type="password" name="password_confirm" required placeholder="Повторите пароль ">
-        </p>
-        <p>
-          <label>Федеральный округ</label>
-          <select name="country">
-            <option>Центральный</option>
-            <option>Северо-Западный</option>
-            <option>Приволжский</option>
-            <option>Южный</option>
-            <option>Северо-Кавказский</option>
-            <option>Уральский</option>
-            <option>Сибирский</option>
-            <option>Дальневосточный</option>
-          </select>
-        </p>
-        <p>
-          <label>Заказываю</label>
-          </p>
-          <p>
-            <input type="checkbox" name="terms">
-            Рога в количестве <a href="/terms" ></a>
-            <input type="text" name="last_name" required placeholder="Введите количество">
-        </p>
-            <p>
-            <input type="checkbox" name="terms">
-            Копыта в количестве <a href="/terms"></a>
-            <input type="text" name="last_name" required placeholder="Введите количество ">
-        </p>
-        <p>
-        <label>Пожелания</label>
-    </p>
-       <textarea id="1" name="1" placeholder="Введите ваши пожелания"></textarea>
-        <p>
-          <button>
-            Подтвердить заказ
-          </button>
-        </p>
-      </form>
-    </th>
-    </table>
-    <hr>
-    <footer>
-        <p>&copy Бендер и компания</p> 
-        <a href="#name_sate">Наверх</a>
+        <main>
+            <table border="3" align="center" bgcolor="aquamarine">
+                <form action="/signup" method="POST">
+                    <tr>
+                        <td>
+                            <p>
+                                <label>
+                                    <input type="radio" name="title" value="mr"> Наличный расчет
+                                </label>
+                                <label>
+                                    <input type="radio" name="title" value="mrs"> Безналичный расчет
+                                </label>
+                            </p>
+                            <p><label>Фамилия</label><input type="text" name="first_name" required placeholder="Введите вашу фамилию"></p>
+                            <p><label>Имя</label><input type="text" name="last_name" required placeholder="Введите ваше имя"></p>
+                            <p><label>Отчество</label><input type="text" name="patronymic" required placeholder="Введите ваше отчество"></p>
+                            <p><label>Email</label><input type="email" name="email" required placeholder="Введите вашу почту"></p>
+                            <p><label>Телефон</label><input type="tel" name="phone" required placeholder="Введите ваш телефон"></p>
+                            <p><label>Пароль</label><input type="password" name="password" required placeholder="Введите пароль"></p>
+                            <p><label>Подтвердите пароль</label><input type="password" name="password_confirm" required placeholder="Повторите пароль"></p>
+                            <p><label>Федеральный округ</label>
+                                <select name="country">
+                                    <option>Центральный</option>
+                                    <option>Северо-Западный</option>
+                                    <option>Приволжский</option>
+                                    <option>Южный</option>
+                                    <option>Северо-Кавказский</option>
+                                    <option>Уральский</option>
+                                    <option>Сибирский</option>
+                                    <option>Дальневосточный</option>
+                                </select>
+                            </p>
+                            <p><label>Заказываю:</label></p>
+                            <p><input type="checkbox" name="terms"> Рога в количестве<input type="text" name="horns_quantity" required placeholder=""></p>
+                            <p><input type="checkbox" name="terms"> Копыта в количестве<input type="text" name="hooves_quantity" required placeholder=""></p>
+                            <p><label>Пожелания:</label></p>
+                            <textarea id="1" name="wishes" placeholder=""></textarea>
+                            <button type="submit">Подтвердить заказ</button>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </main>
+    </div>
+    <footer id="footer">
+        <p>&copy; Бендер и компания</p> 
     </footer>
+
 </body>
 </html>
